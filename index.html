@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoPlants - Kits de Hidroponía para un Mundo Mejor</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="70">
+
+    <!-- Barra de Navegación -->
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+        <div class="container d-flex align-items-center">
+            <a class="navbar-brand d-flex align-items-center" href="#inicio">
+                <img src="img/Ecoplants.png" alt="logo de Ecoplants" class="nav-item me-3">
+                <h3 class="nav-item">Ecoplants</h3>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proceso">Proceso</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resultados">Resultados</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                    <li class="nav-item dropdown ms-lg-2">
+                        <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                            <i class="bi theme-icon-active my-1"></i>
+                            <span class="d-lg-none ms-2">Tema</span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme">
+                            <li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"><i class="bi bi-sun-fill me-2 opacity-50"></i>Claro</button></li>
+                            <li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"><i class="bi bi-moon-stars-fill me-2 opacity-50"></i>Oscuro</button></li>
+                            <li><button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="auto"><i class="bi bi-circle-half me-2 opacity-50"></i>Sistema</button></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ms-lg-2">
+                        <a class="nav-link" href="#"><i class="bi bi-cart-fill fs-4"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Sección Inicio (Hero) -->
+    <section id="inicio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1>Cultiva el Futuro, Cosecha Esperanza</h1>
+                    <p class="lead">
+                        Únete a nuestra misión de combatir el hambre con kits de hidroponía creados por estudiantes para todos. ¡Empieza a cultivar hoy mismo!
+                    </p>
+                    <a href="#productos" class="btn btn-lg btn-custom">Descubre nuestros kits</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Sección Nosotros -->
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Misión</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="https://placehold.co/600x400/2a9d8f/ffffff?text=Equipo+de+Estudiantes" class="img-fluid rounded shadow" alt="Equipo de estudiantes">
+                </div>
+                <div class="col-lg-6">
+                    <h3>Más que una empresa, un movimiento.</h3>
+                    <p>Somos un grupo de estudiantes apasionados por la tecnología, la sostenibilidad y el emprendimiento. EcoPlants nació de un sueño: utilizar la hidroponía para crear una solución accesible y educativa contra la inseguridad alimentaria.</p>
+                    <p>Cada kit que vendes nos ayuda a aprender sobre negocios y nos acerca a nuestra meta de un mundo sin hambre. ¡Gracias por ser parte de nuestro viaje!</p>
+                </div>
+            </div>
+            <div class="row mt-5 pt-5">
+                <div class="col-12 text-center mb-5">
+                    <h3>Nuestro Compromiso con los ODS</h3>
+                    <p>Nuestro proyecto está alineado con los Objetivos de Desarrollo Sostenible de la ONU.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ods-card">
+                        <i class="bi bi-heart-pulse"></i>
+                        <h5>ODS 2: Hambre Cero</h5>
+                        <p class="small">Promovemos la autosuficiencia alimentaria y el acceso a alimentos frescos y nutritivos a través del hidrocultivo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ods-card">
+                        <i class="bi bi-recycle"></i>
+                        <h5>ODS 12: Producción y Consumo Responsables</h5>
+                        <p class="small">La hidroponía utiliza hasta un 90% menos de agua que la agricultura tradicional y elimina la necesidad de pesticidas.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="ods-card">
+                        <i class="bi bi-shield-check"></i>
+                        <h5>ODS 13: Acción por el Clima</h5>
+                        <p class="small">Al cultivar localmente, reducimos la huella de carbono asociada al transporte de alimentos y promovemos un planeta más sano.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Sección Productos (Llamada a la acción principal) -->
+    <section id="productos" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Kit de Hidroponía</h2>
+            <div class="row gy-4 justify-content-center">
+                <!-- Producto Único -->
+                <div class="col-lg-5 col-md-8 d-flex align-items-stretch">
+                    <div class="card product-card">
+                        <img src="https://placehold.co/600x400/eeeeee/333333?text=Kit+Iniciación" class="card-img-top" alt="Kit Iniciación">
+                        <div class="card-body p-4">
+                            <div>
+                                <h3 class="card-title">Kit "Mi Primer Cultivo"</h3>
+                                <p class="card-text">Ideal para principiantes y espacios pequeños. Cultiva tus propias lechugas y hierbas aromáticas en casa de forma sencilla.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Sistema para 3 plantas</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Nutrientes incluidos</li>
+                                    <li><i class="bi bi-check-circle-fill text-success"></i> Guía de inicio rápido</li>
+                                </ul>
+                            </div>
+                            <div class="mt-4 text-center">
+                                <p class="product-price">$39.99</p>
+                                <a href="#" class="btn btn-custom w-100">Comprar ahora</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Sección Proceso de Elaboración -->
+    <section id="proceso" class="section">
+        <div class="container">
+            <h2 class="section-title">Nuestro Proceso</h2>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/0077b6/ffffff?text=Diseño+del+Kit" class="img-fluid" alt="Diseño del Kit">
+                    <div class="overlay"><h5>1. Diseño e Innovación</h5></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/2a9d8f/ffffff?text=Corte+de+Materiales" class="img-fluid" alt="Corte de Materiales">
+                    <div class="overlay"><h5>2. Selección de Materiales</h5></div>
+                </div>
+                <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/fca311/ffffff?text=Ensamblaje" class="img-fluid" alt="Ensamblaje">
+                    <div class="overlay"><h5>3. Ensamblaje Cuidadoso</h5></div>
+                </div>
+                 <div class="col-lg-3 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/e76f51/ffffff?text=Empaquetado" class="img-fluid" alt="Empaquetado">
+                    <div class="overlay"><h5>4. Empaquetado y Envío</h5></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Sección Galería de Resultados -->
+    <section id="resultados" class="section">
+        <div class="container">
+            <h2 class="section-title">Galería de Resultados</h2>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/2a9d8f/ffffff?text=Lechugas+Frescas" class="img-fluid" alt="Lechugas hidropónicas">
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/fca311/ffffff?text=Tomates+Cherry" class="img-fluid" alt="Tomates hidropónicos">
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/e76f51/ffffff?text=Hierbas+Aromáticas" class="img-fluid" alt="Hierbas hidropónicas">
+                </div>
+                <div class="col-lg-4 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/264653/ffffff?text=Cliente+Feliz" class="img-fluid" alt="Cliente con su cultivo">
+                </div>
+                 <div class="col-lg-4 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/8ecae6/ffffff?text=Instalación+Fácil" class="img-fluid" alt="Instalación del kit">
+                </div>
+                 <div class="col-lg-4 col-md-6 gallery-item">
+                    <img src="https://placehold.co/600x400/0077b6/ffffff?text=Cosecha+Abundante" class="img-fluid" alt="Cosecha hidropónica">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section-title">¿Tienes preguntas?</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="text-center mb-5">Nos encantaría escucharte. Si tienes alguna duda sobre nuestros productos, nuestra misión o simplemente quieres saludar, déjanos un mensaje.</p>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Tu Nombre</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Tu Correo Electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-custom btn-secondary-custom">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?text=Hola,%20necesito%20informaci%C3%B3n%20por%20favor." class="iberoperu-iberoperu-apps-6-x-enova_whatsapp_anchor" target="_blank" rel="noopener">
+            <img alt="whatsapp" crossorigin="anonymous" data-src="https://iberoperu.vtexassets.com/arquivos/logo_whatsapp_mini.png" loading="lazy" src="https://iberoperu.vtexassets.com/arquivos/logo_whatsapp_mini.png">
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center bg-body-tertiary">
+        <div class="container">
+            <p class="mb-3">&copy; 2025 EcoPlants. Un proyecto estudiantil con un gran propósito.</p>
+            <div class="social-icons">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-tiktok"></i></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
