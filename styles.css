@@ -400,7 +400,7 @@
         }
 
         /* -- Footer -- */
-        [data-bs-theme = "light"] footer {
+        [data-bs-theme = light] footer {
             color: black;
         }
         footer {
@@ -408,11 +408,11 @@
             padding: 40px 0;
             transition: background-color 0.3s ease;
         }
-        [data-bs-theme = "light"] footer .social-icons a{
+        [data-bs-theme = light] footer .social-icons a{
             color: black;
         }
-        [data-bs-theme = "dark"] footer .social-icons a{
-            color: white;
+        [data-bs-theme = dark] footer .social-icons a{
+            color: var(--dark-gray);
         }
         
         footer .social-icons a {
@@ -425,7 +425,7 @@
         }
 
         /* -- Estilos para Tema Oscuro -- */
-        [data-bs-theme="dark"] {
+        [data-bs-theme=dark] {
             --light-gray: #212529;
             --dark-gray: #f8f9fa;
             --text-color: #dee2e6;
