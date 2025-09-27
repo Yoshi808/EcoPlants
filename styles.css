@@ -231,6 +231,29 @@
             display: none;
         }
 
+        /* --- Estilo de Carrito (Nuevo) --- */
+        .cart-icon-container {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .cart-icon-container:hover {
+            transform: scale(1.05);
+        }
+
+        .cart-badge {
+            position: absolute;
+            top: 0px;
+            right: -8px;
+            padding: 3px 8px;
+            border-radius: 50%;
+            background-color: var(--bs-danger);
+            color: white;
+            font-size: 0.75rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
         /* -- Secciones -- */
         .section {
             padding: 80px 0;

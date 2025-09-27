@@ -114,11 +114,13 @@
                     </li>
                 </ul>
                 </li>
-                <li class="nav-item ms-lg-2">
-                <a class="nav-link" href="#"
-                    ><i class="bi bi-cart-fill fs-4"></i
-                ></a>
-                </li>
+                <li class="nav-item d-flex align-items-center ms-lg-2 me-3">
+                        <!-- Ícono de Carrito con Badge -->
+                        <div class="cart-icon-container" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-cart-fill fs-4"></i>
+                            <span class="cart-badge" id="cart-count">0</span>
+                        </div>
+                    </li>
             </ul>
             </div>
         </div>
@@ -225,7 +227,7 @@
             </div>
             <div class="col-lg-3 col-md-6 gallery-item">
                 <img
-                src="https://placehold.co/600x400/2a9d8f/ffffff?text=Corte+de+Materiales"
+                src="img/Huevo.jpg"
                 class="img-fluid"
                 alt="Corte de Materiales"
                 />
@@ -233,11 +235,11 @@
             </div>
             <div class="col-lg-3 col-md-6 gallery-item">
                 <img
-                src="https://placehold.co/600x400/fca311/ffffff?text=Ensamblaje"
+                src="img/Huevo2.jpg"
                 class="img-fluid"
-                alt="Ensamblaje"
+                alt="Elaboración"
                 />
-                <div class="overlay"><h5>3. Ensamblaje Cuidadoso</h5></div>
+                <div class="overlay"><h5>3. Elaboración</h5></div>
             </div>
             <div class="col-lg-3 col-md-6 gallery-item">
                 <img
@@ -256,14 +258,13 @@
             <h2 class="section-title">Nuestro Kit de Hidroponía</h2>
             <div class="row gy-4 justify-content-center">
             <div class="col-lg-5 col-md-8 d-flex align-items-stretch">
-                <div class="card product-card">
-                <img
+                <div class="card product-card" data-product-id="1">
+                    <img
                     src="https://placehold.co/600x400/eeeeee/333333?text=Kit+Iniciación"
                     class="card-img-top"
                     alt="Kit Iniciación"
-                />
-                <div class="card-body p-4">
-                    <div>
+                    />
+                    <div class="card-body">
                     <h3 class="card-title">Kit "Mi Primer Cultivo"</h3>
                     <p class="card-text">
                         Ideal para principiantes y espacios pequeños. Cultiva tus
@@ -284,10 +285,21 @@
                         de inicio rápido
                         </li>
                     </ul>
+                    <div
+                        class="d-flex justify-content-between mt-4 text-center"
+                    >
+                        <!-- PRECIO ACTUALIZADO A SOLES -->
+                        <span class="product-price" style="font-size: 150%;">S/ 34.99</span>
+                        <!-- DATA-PRICE ACTUALIZADO A 34.99 -->
+                        <button
+                        class="btn btn-custom btn-sm add-to-cart-btn"
+                        data-id="1"
+                        data-name="Kit de Inicio Básico"
+                        data-price="34.99"
+                        >
+                        <i class="bi bi-bag-plus me-1"></i> Añadir al Carrito
+                        </button>
                     </div>
-                    <div class="mt-4 text-center">
-                    <p class="product-price">$39.99</p>
-                    <a href="#" class="btn btn-custom w-100">Comprar ahora</a>
                     </div>
                 </div>
                 </div>
@@ -447,6 +459,65 @@
             </div>
         </div>
         </footer>
+
+        <!-- Modal del Carrito de Compras (Checkout) -->
+        <div
+        class="modal fade"
+        id="cartModal"
+        tabindex="-1"
+        aria-labelledby="cartModalLabel"
+        aria-hidden="true"
+        >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold" id="cartModalLabel">
+                🛒 Tu Carrito de Compras
+                </h5>
+                <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+                ></button>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items-container">
+                <!-- Los productos del carrito se renderizarán aquí -->
+                <p class="text-center text-muted" id="empty-cart-message">
+                    El carrito está vacío.
+                </p>
+                </div>
+
+                <div
+                class="d-flex justify-content-end align-items-center mt-4 pt-3 border-top"
+                >
+                <!-- ID para el precio total en el modal. MONEDA CAMBIADA A SOLES -->
+                <h4 class="me-3 mb-0 fw-bold">
+                    Total:
+                    <span id="cart-total-price" class="text-success">S/ 0.00</span>
+                </h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button
+                type="button"
+                class="btn btn-secondary-custom"
+                data-bs-dismiss="modal"
+                >
+                Seguir Comprando
+                </button>
+                <button
+                type="button"
+                class="btn btn-custom"
+                id="finish-purchase-btn"
+                >
+                Finalizar Compra
+                </button>
+            </div>
+            </div>
+        </div>
+        </div>
 
         <!-- Bootstrap JS Bundle -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
